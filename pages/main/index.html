@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="home-header">
+        <h1>kontacts</h1>
+        <div class="img-header-div">
+            <img id="logout-icon" src="../../assets/sign-out-icon.svg" alt="">
+        </div>
+    </header>
+    <main>
+        <button class="button add-button">Adicionar</button>
+        <div class="table-div">
+            <table class="table">
+                <tr class="table-row table-header-row">
+                    <th class="table-header-cell">name</th>
+                    <th class="table-header-cell">email</th>
+                    <th class="table-header-cell">telefone</th>
+                    <th class="table-header-cell"></th>
+                </tr>
+                <tr class="table-row table-normal-row">
+                    <td class="table-cell">claudia m. sousa</td>
+                    <td class="table-cell">claudia@teste.com.br</td>
+                    <td class="table-cell">(99)9999-9999</td>
+                    <td class="table-cell table-img"><img src="../../assets/trash-icon.svg" alt=""></td>
+                </tr>
+                <tr class="table-row table-normal-row"">
+                    <td class=" table-cell">jião santos</td>
+                    <td class="table-cell">joao@teste.com.br</td>
+                    <td class="table-cell">(99)9999-9999</td>
+                    <td class="table-cell table-img"><img src="../../assets/trash-icon.svg" alt=""></td>
+                </tr>
+                <tr class="table-row table-normal-row"">
+                    <td class=" table-cell">pedro henrique</td>
+                    <td class="table-cell">pedro.henrque@teste.com.br</td>
+                    <td class="table-cell">(99)9999-9999</td>
+                    <td class="table-cell table-img"><img src="../../assets/trash-icon.svg" alt=""></td>
+                </tr>
+                <tr class="table-row table-normal-row"">
+                    <td class=" table-cell">marina tavares</td>
+                    <td class="table-cell">marina_tavares@teste.com.br</td>
+                    <td class="table-cell">(99)9999-9999</td>
+                    <td class="table-cell table-img"><img src="../../assets/trash-icon.svg" alt=""></td>
+                </tr>
+                <tr class="table-row table-normal-row"">
+                    <td class=" table-cell">daniel lopes</td>
+                    <td class="table-cell">daniel.lopes@cubos.academy</td>
+                    <td class="table-cell">(99)9999-9999</td>
+                    <td class="table-cell table-img"><img src="../../assets/trash-icon.svg" alt=""></td>
+                </tr>
+                <tr class="table-row table-normal-row"">
+                    <td class=" table-cell">guido cerqueira</td>
+                    <td class="table-cell">guido.cerqueira@cubos.academy</td>
+                    <td class="table-cell">(99)9999-9999</td>
+                    <td class="table-cell table-img"><img src="../../assets/trash-icon.svg" alt=""></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <div class="modal modal-new-contact blur">
+        <div class="form-div">
+            <form class="form new-contact-form">
+                <img class="close-icon new-contact-close-icon" src="../../assets/close-icon.svg" alt="">
+                <legend class="legend">Novo Contato</legend>
+                <input type="text" name="new-name" id="new-name" placeholder="Nome">
+                <span class="warning">Preencha um nome</span>
+                <input type="email" name="new-email" id="new-email" placeholder="Email">
+                <span class="warning">Preencha um e-mail válido</span>
+                <input type="telephone" name="new-telephone" id="new-telephone" placeholder="Telefone">
+                <span class="warning">Preencha um número de telefone</span>
+
+                <button class="button add-new-contact-button">adicionar</button>
+                <button class="button clean-new-contact-button">limpar</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal modal-delet-contact blur">
+        <div class="form-div">
+            <form class="form delet-contact-form">
+                <img class="close-icon delet-contact-close-icon" src="../../assets/close-icon.svg" alt="">
+                <legend class="legend">Confirmar exclusão?</legend>
+                <legend class="lower-legend">Deseja excluir o contato?</legend>
+                <button class="button delete-button return">excluir</button>
+                <button class="button cancel-delete-button return">cancelar</button>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

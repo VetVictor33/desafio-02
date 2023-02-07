@@ -1,0 +1,222 @@
+.home-header {
+    display: flex;
+    justify-content: space-between;
+
+    padding-right: 25px;
+
+    font-family: 'Rokkitt', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    text-align: center;
+
+    text-transform: uppercase;
+
+    background-color: #134563;
+    color: #fff;
+
+    height: 10vh;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+}
+
+.img-header-div {
+    display: flex;
+    align-items: center;
+}
+
+#logout-icon:hover {
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    height: 90vh;
+}
+
+.add-button {
+    background-color: #04C45C;
+    width: fit-content;
+
+    padding: 20px 50px;
+
+    margin-left: 15vw;
+}
+
+.table-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.table {
+    width: 60vw;
+    height: 40vh;
+
+    border-collapse: collapse;
+}
+
+.table-header-row {
+    background-color: #F4F0F0;
+}
+
+.table-header-cell {
+    border: none;
+    padding-left: 25px;
+
+    text-align: left;
+    text-transform: capitalize;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #1C1414;
+}
+
+.table-normal-row {
+    background-color: #fff;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: rgba(28, 20, 20, 0.79);
+}
+
+.table-cell {
+    padding-left: 25px;
+}
+
+.table-cell:first-child {
+    text-transform: capitalize;
+}
+
+.table-img {
+    height: 100%;
+    width: 100%;
+
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-img:hover {
+    cursor: pointer;
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.modal-new-contact {
+    display: none;
+}
+
+.modal-delet-contact {
+    display: none;
+}
+
+.close-icon {
+    width: 13px;
+    height: auto;
+
+    margin-left: 100%;
+}
+
+.close-icon:hover {
+    cursor: pointer;
+}
+
+.form-div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #E8E8E8;
+    border-radius: 8px;
+}
+
+.legend {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.lower-legend {
+    margin-top: 20px;
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.new-contact-form,
+.delet-contact-form {
+    padding: 10px 30px;
+    margin: 10px;
+
+
+    height: 70vh;
+    width: 20vw;
+}
+
+.delet-contact-form {
+    height: fit-content;
+}
+
+input {
+    padding: 10px 5px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #968B8B;
+}
+
+.add-new-contact-button,
+.delete-button {
+    background-color: #04C45C;
+}
+
+.clean-new-contact-button,
+.cancel-delete-button {
+    background: rgba(251, 6, 21, 0.65);
+}
+
+.blur {
+    background: rgba(16, 15, 15, 0.56);
+}
